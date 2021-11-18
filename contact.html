@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant - Contact</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <div class="name">
+                    Foodies Spot
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html"  class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay">
+                <div class="body">
+                    <h1>Contact us</h1>
+                    <p>
+                        We offer full-service catering for any event, large or small. We understand your needs and we will cater the food
+                        to satisfy the biggerst criteria of them all, both look and taste.
+                    </p>
+                    <p>
+                        Any queries? Please leave your details, and our team will get in touch with you shortly. 
+                    </p>
+                    <div class="contact-container">
+                        <form onsubmit="contact();return false">
+                          <p><input class="contact-input" type="text" id="fname" name="fname" placeholder="First Name" required></p>
+                          <p><input class="contact-input" type="text" id="lname" name="lname" placeholder="Last Name" required></p>
+                          <p><input class="contact-input" type="email" id="emailid" name="emailid" placeholder="Email id" required></p>  
+                          <p><textarea class="contact-input" id="message" name="message" placeholder="Message/Query/Complaints" required></textarea></p>
+                          <p><button type="submit" class="button">Send</button></p>  
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-content">
+                    <h3>Opening times</h3>
+                    <p>
+                        <span>Monday—Thursday: 08:00 — 22:00</span>
+                        <span>Friday—Saturday: 09:00 — 23:00</span>
+                        <span>Sunday: 10:00 — 17:00</span>
+                    </p>
+                </div>
+                <div class="footer-content">
+                    <h3>Free delivery</h3>
+                    <p>
+                        Free home delivery and outdoor catering available for special occasions.
+                    </p>
+                </div>
+                <div class="footer-content">
+                    <h3>
+                        Location
+                    </h3>
+                    <p>
+                        <span>Foodies spot</span>
+                        <span>15 Florida Ave</span>
+                        <span>Palo-Alto, 1111 CA</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

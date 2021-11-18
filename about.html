@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant - About</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <div class="name">
+                    Foodies Spot
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay">
+                <div class="body">
+                    <h1>About us</h1>
+                    <p>
+                        Established in San Francisco in the year 2000. Foodies spot is the pioneer in bringing
+                        foods to the people world around. Over the years they mastered the art of using
+                        spice to give one’s taste buds the best food experience.
+                    </p>
+                    <p>
+                        Foodies spot is spreading its wings to give customers a homely dining experience.
+                        The freshness of its products and the use of secret home around recipes bring the
+                        food lovers in search of those unique dishes that can be found only at Foodies spot.
+                        Foodies spot’s humble beginnings started in San Francisco more than 20 years back .
+                        As time passed, Foodies spotbecame synonym for San Francisco’s Cuisine. The
+                        people’s demand as led us to take this experience overseas. Foodies spot has been
+                        accommodating the changes of time by increasing their standards to cater the
+                        ever-growing necessities of today’s taste hunters. And now Foodies spotRestaurants
+                        have preserved the culinary traditions and served as one of the most outstanding
+                        Ambassadors of San Francisco’s Cuisine.
+                    </p>
+                    <div>
+                        <h1>Our Infrastructure</h1>
+                        <div id="slider">
+                            <div class="arrow">
+                                <img id="left" src="left-arrow.png" class="image">
+                            </div>
+                            <div class="arrow">
+                                <img id="right" src="right-arrow.png" class="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-content">
+                    <h3>Opening times</h3>
+                    <p>
+                        <span>Monday—Thursday: 08:00 — 22:00</span>
+                        <span>Friday—Saturday: 09:00 — 23:00</span>
+                        <span>Sunday: 10:00 — 17:00</span>
+                    </p>
+                </div>
+                <div class="footer-content">
+                    <h3>Free delivery</h3>
+                    <p>
+                        Free home delivery and outdoor catering available for special occasions.
+                    </p>
+                </div>
+                <div class="footer-content">
+                    <h3>
+                        Location
+                    </h3>
+                    <p>
+                        <span>Foodies spot</span>
+                        <span>15 Florida Ave</span>
+                        <span>Palo-Alto, 1111 CA</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            var images = ['image1.jfif','image2.jfif','image3.jfif','image4.jfif','image5.jfif'];
+            var i=0;
+            var slider = document.getElementById('slider');
+            slider.style.background = `url(${images[0]})`
+            var arrows = document.querySelectorAll('.arrow');
+
+            arrows.forEach(function(arrow){
+                arrow.addEventListener('click',function(e){
+                    if(e.target.id === "left"){
+                        i--;
+                        if(i<0){
+                            i= images.length - 1;
+                        }
+                        slider.style.background = `url(${images[i]})`
+                    }
+                    else if (e.target.id ==="right"){
+                        i++;
+                        if(i >= images.length){
+                            i=0;
+                        }
+                        slider.style.background = `url(${images[i]})`
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>
+
+
